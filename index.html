@@ -150,55 +150,55 @@
     <!-- ================= SLIDE 2 — SOBRE MÍ ================= -->
     <section class="slide" id="slide-about" aria-roledescription="diapositiva" aria-label="Sobre mí">
       <div class="slide__inner">
-        <div class="about-layout" style="display:flex; gap:4rem; align-items:center;">
-          <div style="flex:1.3;">
-            <div class="slide-head" data-stagger="2">
-              <p class="eyebrow">Perfil</p>
-              <h2>Sobre mí</h2>
-              <p>
-                Estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), con base
-                sólida en desarrollo Full Stack y Mobile a través de proyectos propios. Aplico principios de
-                arquitectura de software, patrones de diseño, diseño de bases de datos y desarrollo de APIs REST,
-                trabajando con Git y metodologías ágiles (Scrum). Busco mi primera práctica pre profesional para
-                aportar esta base técnica desde el primer día.
-              </p>
-            </div>
-
-            <div class="timeline" data-stagger="3">
-              <div class="timeline__item">
-                <p class="timeline__label">Formación</p>
-                <p class="timeline__title">Ingeniería de Software · UPC</p>
-                <p class="timeline__desc">Estudiante universitario, en formación activa.</p>
-              </div>
-              <div class="timeline__item">
-                <p class="timeline__label">Cursos clave</p>
-                <p class="timeline__title">Diseño de software, web y mobile</p>
-                <p class="timeline__desc">Diseño y Patrones de Software, Aplicaciones Web, Aplicaciones para Dispositivos Móviles, Desarrollo de Aplicaciones Open Source y Gerencia de Proyectos en Computación.</p>
-              </div>
-              <div class="timeline__item">
-                <p class="timeline__label">Actualidad</p>
-                <p class="timeline__title">Construyendo proyectos full stack y mobile</p>
-                <p class="timeline__desc">En búsqueda activa de mi primera práctica pre profesional en Ingeniería de Software.</p>
-              </div>
-            </div>
-
-            <div data-stagger="4" style="margin-top:2.2rem;">
-              <p class="text-mist mono" style="font-size:0.92rem; letter-spacing:0.04em; margin-bottom:0.7rem;">Tecnologías con las que más disfruto trabajar</p>
-              <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
-                <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">Angular</span>
-                <span class="chip">Flutter</span><span class="chip">Python</span><span class="chip">FastAPI</span>
-              </div>
-            </div>
+        <div class="about-head" style="display:flex; align-items:center; justify-content:space-between; gap:2.2rem;">
+          <div class="slide-head" data-stagger="2" style="margin-bottom:0; flex:1;">
+            <p class="eyebrow">Perfil</p>
+            <h2>Sobre mí</h2>
+            <p>
+              Estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), con base
+              sólida en desarrollo Full Stack y Mobile a través de proyectos propios. Aplico principios de
+              arquitectura de software, patrones de diseño, diseño de bases de datos y desarrollo de APIs REST,
+              trabajando con Git y metodologías ágiles (Scrum). Busco mi primera práctica pre profesional para
+              aportar esta base técnica desde el primer día.
+            </p>
           </div>
 
-          <div style="flex:0 0 auto;" data-stagger="2">
-            <div class="photo--circular">
+          <div style="flex:0 0 auto; display:flex; flex-direction:column; align-items:center; gap:0.8rem;" data-stagger="2">
+            <div class="photo--circular is-compact">
               <picture>
                 <source srcset="assets/images/profile-square.webp" type="image/webp">
                 <img src="assets/images/profile-square.png" alt="" width="220" height="220">
               </picture>
             </div>
+
+            <div class="glass" style="padding:0.75rem 1rem; max-width:250px; text-align:center;">
+              <p class="text-mist mono" style="font-size:0.76rem; letter-spacing:0.04em; margin-bottom:0.45rem;">Tecnologías favoritas</p>
+              <div style="display:flex; flex-wrap:wrap; gap:0.32rem; justify-content:center;">
+                <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">Angular</span>
+                <span class="chip">Flutter</span><span class="chip">Python</span><span class="chip">FastAPI</span>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="project-grid" data-stagger="3" style="margin-top: clamp(0.8rem, 2.6vh, 1.4rem);">
+          <article class="project-card">
+            <span class="chip project-card__tag">Formación</span>
+            <h3 class="project-card__title">Ingeniería de Software · UPC</h3>
+            <p class="project-card__problem">Estudiante universitario, en formación activa.</p>
+          </article>
+
+          <article class="project-card">
+            <span class="chip project-card__tag">Cursos clave</span>
+            <h3 class="project-card__title">Diseño de software, web y mobile</h3>
+            <p class="project-card__problem">Diseño y Patrones de Software, Aplicaciones Web, Aplicaciones para Dispositivos Móviles, Desarrollo de Aplicaciones Open Source y Gerencia de Proyectos en Computación.</p>
+          </article>
+
+          <article class="project-card">
+            <span class="chip project-card__tag">Actualidad</span>
+            <h3 class="project-card__title">Construyendo proyectos full stack y mobile</h3>
+            <p class="project-card__problem">En búsqueda activa de mi primera práctica pre profesional en Ingeniería de Software.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -288,27 +288,36 @@
           <p>De los fundamentos a proyectos aplicados: así fui construyendo mi base como desarrollador.</p>
         </div>
 
-        <div class="timeline" data-stagger="3" style="max-width:760px;">
-          <div class="timeline__item">
-            <p class="timeline__label">Fundamentos</p>
-            <p class="timeline__title">Programación Orientada a Objetos, algoritmos y bases de datos</p>
-            <p class="timeline__desc">Base teórica y práctica que sostiene todo el desarrollo posterior.</p>
-          </div>
-          <div class="timeline__item">
-            <p class="timeline__label">Cursos clave</p>
-            <p class="timeline__title">Diseño y Patrones de Software · Aplicaciones Web · Aplicaciones Móviles</p>
-            <p class="timeline__desc">Desarrollo de Aplicaciones Open Source y Gerencia de Proyectos en Computación completaron esta etapa.</p>
-          </div>
-          <div class="timeline__item">
-            <p class="timeline__label">Proyectos aplicados</p>
-            <p class="timeline__title">PetCare · NeuroZen · AgroSMART</p>
-            <p class="timeline__desc">Tres proyectos full stack y mobile completos, aplicando arquitectura, APIs REST y bases de datos reales.</p>
-          </div>
-          <div class="timeline__item">
-            <p class="timeline__label">Próximo paso</p>
-            <p class="timeline__title">Primera práctica pre profesional</p>
-            <p class="timeline__desc">Buscando aportar esta base técnica en un equipo de desarrollo real.</p>
-          </div>
+        <div class="growth-flow" data-stagger="3">
+          <article class="project-card growth-step">
+            <span class="chip project-card__tag mono">01 · Fundamentos</span>
+            <h3 class="project-card__title">Programación Orientada a Objetos, algoritmos y bases de datos</h3>
+            <p class="project-card__problem">Base teórica y práctica que sostiene todo el desarrollo posterior.</p>
+          </article>
+
+          <div class="growth-flow__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-arrow-right"/></svg></div>
+
+          <article class="project-card growth-step">
+            <span class="chip project-card__tag mono">02 · Cursos clave</span>
+            <h3 class="project-card__title">Diseño y Patrones de Software · Aplicaciones Web · Aplicaciones Móviles</h3>
+            <p class="project-card__problem">Desarrollo de Aplicaciones Open Source y Gerencia de Proyectos en Computación completaron esta etapa.</p>
+          </article>
+
+          <div class="growth-flow__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-arrow-right"/></svg></div>
+
+          <article class="project-card growth-step">
+            <span class="chip project-card__tag mono">03 · Proyectos aplicados</span>
+            <h3 class="project-card__title">PetCare · NeuroZen · AgroSMART</h3>
+            <p class="project-card__problem">Tres proyectos full stack y mobile completos, aplicando arquitectura, APIs REST y bases de datos reales.</p>
+          </article>
+
+          <div class="growth-flow__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-arrow-right"/></svg></div>
+
+          <article class="project-card growth-step">
+            <span class="chip project-card__tag mono">04 · Próximo paso</span>
+            <h3 class="project-card__title">Primera práctica pre profesional</h3>
+            <p class="project-card__problem">Buscando aportar esta base técnica en un equipo de desarrollo real.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -360,19 +369,14 @@
     <!-- ================= SLIDE 7 — HABILIDADES BLANDAS ================= -->
     <section class="slide" id="slide-soft-skills" aria-roledescription="diapositiva" aria-label="Habilidades blandas">
       <div class="slide__inner">
-        <div class="soft-skills-head" style="display:flex; align-items:center; justify-content:space-between; gap:3rem;">
+        <div class="soft-skills-head" style="display:flex; align-items:center; justify-content:space-between; gap:1.5rem;">
           <div class="slide-head" data-stagger="2" style="margin-bottom:0;">
             <p class="eyebrow">Competencias</p>
             <h2>Habilidades Blandas</h2>
             <p>Competencias personales que fortalecen mi desempeño en equipos de desarrollo de software y me permiten adaptarme a nuevos desafíos tecnológicos.</p>
           </div>
 
-          <div class="photo-frame soft-skills-photo float-anim" data-stagger="2">
-            <picture>
-              <source srcset="assets/images/profile-full.webp" type="image/webp">
-            <<!--<img src="assets/images/profile-full.png" alt="" width="420" height="560">--> 
-            </picture>
-          </div>
+    
         </div>
 
         <div class="soft-skills-grid" data-stagger="3">

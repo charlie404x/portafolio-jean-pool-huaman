@@ -8,6 +8,16 @@
   .project-grid{ grid-template-columns: repeat(2, 1fr); }
   .soft-skills-grid{ grid-template-columns: repeat(2, 1fr); }
   .gh-grid{ grid-template-columns: repeat(2, 1fr); }
+
+  /* el flujo de 4 pasos + flechas ya no entra cómodo desde este ancho: pasa a carrusel horizontal */
+  .growth-flow{
+    overflow-x: auto; scroll-snap-type: x mandatory; gap: 0.9rem;
+    margin: 0 calc(var(--edge) * -1); padding: 0 var(--edge) 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .growth-flow::-webkit-scrollbar{ display: none; }
+  .growth-flow .project-card{ scroll-snap-align: center; flex: 0 0 auto; width: min(72vw, 340px); min-width: min(72vw, 340px); }
+  .growth-flow__arrow{ display: none; }
 }
 
 /* ---------------- Tablets ---------------- */
@@ -64,7 +74,8 @@
   .hero-layout .eyebrow{ justify-content: center; }
   .hero-actions{ justify-content: center; }
 
-  .about-layout{ flex-direction: column !important; }
+  .about-head{ flex-direction: column !important; text-align: center; }
+  .about-head .eyebrow{ justify-content: center; }
   .photo--circular{ margin: 0 auto; }
 
   .modal{ padding: 1.4rem; }

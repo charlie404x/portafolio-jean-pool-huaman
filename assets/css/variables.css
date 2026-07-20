@@ -50,7 +50,7 @@
   --gap-xs: 0.5rem;
   --gap-sm: 1rem;
   --gap-md: 1.75rem;
-  --gap-lg: 3rem;
+  --gap-lg: clamp(0.8rem, 2.8vh, 1.6rem);
   --gap-xl: 5rem;
 
   /* ---- Forma ---- */
