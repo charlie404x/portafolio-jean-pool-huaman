@@ -1,0 +1,58 @@
+/* ===================== BASE ===================== */
+body{
+  background: var(--void);
+  color: var(--frost);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3{ font-family: var(--font-display); letter-spacing: -0.01em; }
+
+::selection{ background: var(--electric); color: #05070C; }
+
+/* ---- Scrollbar (solo aplica si algo interno hace overflow) ---- */
+::-webkit-scrollbar{ width: 8px; height: 8px; }
+::-webkit-scrollbar-track{ background: transparent; }
+::-webkit-scrollbar-thumb{ background: var(--electric-dim); border-radius: 8px; }
+
+/* ---- Foco visible accesible (nunca se elimina, solo se restyle) ---- */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible{
+  outline: 2px solid var(--electric-soft);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ---- Skip link ---- */
+.skip-link{
+  position: fixed; top: -100%; left: 1rem; z-index: 999;
+  background: var(--electric); color: #05070C; font-family: var(--font-mono);
+  font-size: var(--fs-small); font-weight: 600; padding: 0.75rem 1.25rem; border-radius: var(--radius-sm);
+  transition: top var(--dur-fast) var(--ease-out);
+}
+.skip-link:focus{ top: 1rem; }
+
+/* ---- Utilidades ---- */
+.visually-hidden{
+  position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+.eyebrow{
+  display: inline-flex; align-items: center; gap: 0.6em;
+  font-family: var(--font-mono); font-size: var(--fs-micro); letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--electric-soft);
+}
+.eyebrow::before{
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--electric); box-shadow: 0 0 12px 2px var(--glow);
+}
+
+.text-mist{ color: var(--mist); }
+.text-frost70{ color: var(--frost-70); }
+
+.mono{ font-family: var(--font-mono); }

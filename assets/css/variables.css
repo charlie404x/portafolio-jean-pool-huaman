@@ -1,0 +1,77 @@
+/* =========================================================
+   DESIGN TOKENS — Jean Pool Huaman De La Cruz / Portfolio Deck
+   =========================================================
+   Paleta: negro azulado profundo + azul eléctrico como único
+   acento cromático. Tipografía: Space Grotesk (display, técnica
+   y geométrica) + Inter (texto) + JetBrains Mono (utilitaria,
+   refuerza la identidad de ingeniero: índices, tags de stack,
+   coordenadas de slide).
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root{
+  /* ---- Color: base ---- */
+  --void:        #04060B;   /* fondo raíz, negro con subtono azul */
+  --panel:       #0A1220;   /* panel / slide base */
+  --panel-2:     #101B30;   /* panel elevado (cards) */
+  --panel-3:     #16213A;   /* panel elevado hover */
+  --hairline:    rgba(140, 165, 210, 0.14);
+  --hairline-strong: rgba(160, 185, 230, 0.28);
+
+  /* ---- Color: acento único ---- */
+  --electric:      #3E7BFA;
+  --electric-soft: #7CA8FF;
+  --electric-dim:  #1E3A6E;
+  --glow:          rgba(62, 123, 250, 0.45);
+
+  /* ---- Color: texto ---- */
+  --frost:  #EAF0FF;
+  --frost-70: rgba(234, 240, 255, 0.72);
+  --mist:   #8A96B4;
+  --mist-dim: #5C6685;
+
+  /* ---- Tipografía ---- */
+  --font-display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --font-body:    'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* ---- Escala tipográfica ---- */
+  --fs-display-xl: clamp(3rem, 7vw, 7.2rem);
+  --fs-display-lg: clamp(2.3rem, 5.2vw, 4.1rem);
+  --fs-display-md: clamp(1.75rem, 3.4vw, 2.55rem);
+  --fs-body-lg: clamp(1.2rem, 1.85vw, 1.42rem);
+  --fs-body: 1.1rem;
+  --fs-small: 1rem;
+  --fs-micro: 0.84rem;
+
+  /* ---- Espaciado ---- */
+  --edge: clamp(1.5rem, 5vw, 5rem);
+  --gap-xs: 0.5rem;
+  --gap-sm: 1rem;
+  --gap-md: 1.75rem;
+  --gap-lg: 3rem;
+  --gap-xl: 5rem;
+
+  /* ---- Forma ---- */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+
+  /* ---- Movimiento ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 240ms;
+  --dur-med: 560ms;
+  --dur-slow: 900ms;
+
+  /* ---- Elevación / cristal ---- */
+  --glass-bg: rgba(16, 27, 48, 0.55);
+  --glass-border: rgba(160, 185, 230, 0.16);
+  --shadow-soft: 0 20px 60px -20px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 0 1px var(--hairline), 0 30px 80px -30px rgba(62,123,250,0.35);
+}
+
+@media (prefers-reduced-motion: reduce){
+  :root{ --dur-fast: 1ms; --dur-med: 1ms; --dur-slow: 1ms; }
+}
